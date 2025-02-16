@@ -1,0 +1,62 @@
+.html, body {
+    margin: 0;
+    background-color:rgb(0, 0, 0);
+}
+#block {
+    margin: 0;
+    height: 500px;
+    width: 400px;
+    background-color: rgb(44, 44, 44);
+    left: calc( 50% - 200px );
+    top: calc( 50% - 250px );
+    position: absolute;
+    border-radius: 25px;
+}
+#b1 {
+   height: 80px;
+   width: 80px;
+   background-color: rgb(34, 34, 34);
+   border-radius: 150px;
+   border-style: solid;
+   border-color: black;
+   position: absolute;
+   left: 50px;
+   top: 400px;
+}
+#b2 {
+    height: 80px;
+    width: 80px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 150px;
+    border-style: solid;
+    border-color: black;
+    position: absolute;
+    left: calc( 50% - 40px );
+    top: 400px;
+}
+#b3 {
+    height: 80px;
+    width: 80px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 150px;
+    border-style: solid;
+    border-color: black;
+    position: absolute;
+    right: 50px;
+    top: 400px;
+}
+#compteur {
+    width: 100%;
+}
+#counter-label{
+    width: 70%;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    font-size: 100px;
+    color: white;
+    top: calc( 40% - 50px );
+}
+#b1:hover {
+    background-color: rgb(2, 0, 26);
+}

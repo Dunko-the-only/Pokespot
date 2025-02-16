@@ -1,0 +1,297 @@
+body {
+  position: absolute;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+
+}
+
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "Teko";
+  background-image: url("img/bckgd.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; /* Fond d'écran fixe */
+}
+
+nav {
+  position: absolute;
+  height: 100%;
+}
+
+#menu-toggle {
+  position: fixed;
+}
+
+.menu-button {
+  left: 0px;
+  position: absolute;
+  padding: 0px;
+  margin: 10px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+  transition: 0.3s ease-in-out;
+}
+
+.menu-button .line {
+  display: block;
+  width: 30px;
+  border-radius: 5px;
+  height: 4px;
+  margin: 5px auto;
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+}
+.menu-button.cross {
+  left: 245px;
+}
+
+.menu-button.cross .line:nth-child(1) {
+  transform: rotate(45deg) translate(8px, 4.7px);
+}
+
+.menu-button.cross .line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu-button.cross .line:nth-child(3) {
+  transform: rotate(-45deg) translate(8px, -4.7px);
+}
+
+.menu {
+  margin: 0px;
+  padding: 0px;
+  position: fixed;
+  left: 0px;
+  width: 245px;
+  background-color:  rgb(0 0 0 / 57%);
+  list-style: none;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  height: 100%;
+}
+
+nav li {
+  display: block;
+  font-size: 25px;
+}
+
+.menu li a {
+  display: block;
+  padding: 9px 55px 9px 25px;
+  transition: background-color .2s cubic-bezier(.4,0,.2,1);
+  text-decoration: none;
+  color: white;
+}
+
+.menu li :hover {
+  background-color: rgba(0, 0, 0, 0.07);
+}
+
+nav a {
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  
+}
+
+.menu.hidden {
+  left: -300px;
+}
+
+#matrix {
+  margin: 50px 17%;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  #matrix {
+    margin: 2%; /* Réduction de la marge sur petits écrans */
+  }
+}
+
+#content-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#logo {
+  height: 133px;
+  margin: 10px 0;
+}
+
+#logo img {
+  max-width: 100%;
+  height: auto;
+}
+
+#bvn, #intro, #jv{
+  text-align: center;
+  margin: 20px 0;
+  color: #000;
+}
+
+#bvn {
+  font-size: 60px;
+}
+
+#intro {
+  font-size: 35px;
+}
+
+#jv {
+  font-size: 70px;
+}
+
+hr {
+  width: 80%;
+  margin: 20px auto;
+  border: none;
+  border-bottom: 4px solid #000;
+}
+#all-ev {
+  position: relative;
+  width: 100%;
+  display: flex;
+}
+
+#ev-present {
+  width: 50%;
+  margin : 12px 0 0 0;
+}
+
+#t-ev {
+  font-size: 30px;
+  margin: 20px 0;
+  color: #2c30ff;
+  transition: .15s cubic-bezier(.4,0,.2,1);
+}
+
+#t1 :hover a {
+  color: #36afff;
+}
+
+#logo-ev {
+  position: relative;
+  height: 225px;
+  width: fit-content;
+  margin: 20px 0;
+  left: calc(50% - 200px);
+}
+
+#img-ev {
+  width: 400px ;
+  border-radius: 20px;
+}
+
+#ev-links {
+  width: 20%;
+  height: 100%;
+}
+
+#l1 {
+  margin: 35px 0 45px;
+}
+
+#l1  :hover {
+  color: #36afff;
+}
+
+#l1-a {
+  font-size: 30px;
+  color: #2c30ff;
+  transition: .15s cubic-bezier(.4,0,.2,1);
+}
+
+#l2 {
+  margin: 35px 0 45px;
+}
+
+#l2  :hover {
+  color: #36afff;
+}
+
+#l2-a {
+  font-size: 30px;
+  color: #2c30ff;
+  transition: .15s cubic-bezier(.4,0,.2,1);
+}
+
+#l3 {
+  margin: 35px 0 45px;
+}
+
+#l3  :hover {
+  color: #36afff;
+}
+
+#l3-a {
+  font-size: 30px;
+  color: #2c30ff;
+  transition: .15s cubic-bezier(.4,0,.2,1);
+}
+
+#l4 {
+  margin: 35px 0;
+}
+
+#l4  :hover {
+  color: #36afff;
+}
+
+#l4-a {
+  font-size: 30px;
+  color: #2c30ff;
+  transition: .15s cubic-bezier(.4,0,.2,1);
+}
+
+#img-links {
+  width: 11%;
+  margin: 0 0 0 60px;
+}
+
+#pkdx {
+  margin: 8px 0 0;
+}
+
+#img-pkdx {
+  position: relative;
+  width: 100%;
+  left: calc(47% - 47px);
+}
+
+#astuces {
+  margin: 0 0 5px;
+}
+
+#img-astuces {
+  width: 100%;
+  position: relative;
+  left: calc(44% - 47px);
+}
+
+#gameplay {
+  margin: 0 0 5px;
+}
+
+#img-gameplay {
+  width: 80%;
+  position: relative;
+  left: calc(48% - 40px);
+}
+
+#actus {
+  margin: 0;
+}
+
+#img-actus {
+  width: 80%;
+  position: relative;
+  left: calc(45% - 37.5px);
+}
